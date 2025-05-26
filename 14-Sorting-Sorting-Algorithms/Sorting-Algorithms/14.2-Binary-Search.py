@@ -17,7 +17,7 @@ def binary_search(arr,target):
     end = size - 1
 
     while start <= end:
-        mid = end - start // 2
+        mid = end + start // 2
         if arr[mid] == target:
             return mid
         
@@ -33,15 +33,4 @@ def binary_search(arr,target):
 arr = [10,23,35,45,50,70,85]
 target = 50
 
-def bubbleSort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-    
-    return arr
-
-arr2 = [1,23,2,54,64,3,7,21,20]
-print(bubbleSort(arr2))
-
+print(binary_search(arr,35))
