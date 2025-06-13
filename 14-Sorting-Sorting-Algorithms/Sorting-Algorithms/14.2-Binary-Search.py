@@ -28,6 +28,7 @@ def binary_search(arr,target):
             start = mid+1
 
 
+5,7,7,8,8,10
     
 
 arr = [10,23,35,45,50,70,85]
